@@ -26,12 +26,12 @@ $EM_CONF[$_EXTKEY] = array (
 	'modify_tables' => '',
 	'clearCacheOnLoad' => '1',
 	'lockType' => '',
-	'author' => 'Stig Nørgaard Jepsen',
-	'author_email' => 'stig@8620.dk',
+	'author' => 'Rupert Germann',
+	'author_email' => 'rupi@gmx.li',
 	'author_company' => '',
 	'CGLcompliance' => NULL,
 	'CGLcompliance_note' => NULL,
-	'version' => '1.3.0',
+	'version' => '1.4.1',
 	'constraints' => 
 	array (
 		'depends' => 
