@@ -1,16 +1,15 @@
 # TYPO3 Extension "tt_news"
 Website news with front page teasers and article handling inside.
 
-## Version 1.6.3
+## Version 1.7.3
 
 
 
 
 <table>
-	<tr><td>Version</td><td>1.6.3 stable</td></tr>
-	<tr><td>Release date</td><td>19. September 2004</td></tr>
+	<tr><td>Version</td><td>1.7.3 stable</td></tr>
+	<tr><td>Release date</td><td>18. November 2004</td></tr>
 	<tr><td>Author</td><td>Rupert Germann</td></tr>
-	<tr><td>Comment</td><td>small change in the getRelatedCobj - requires changes in your TS-setup (see deafult setup for example). Fix for the "12hour" bug. New Section about "RTE" configuration in the manual.</td></tr>
 </table>
 
 ## !! Attention !!
