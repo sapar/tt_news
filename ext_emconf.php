@@ -3,7 +3,7 @@
 /***************************************************************
  * Extension Manager/Repository config file for ext "tt_news".
  *
- * Auto generated 18-10-2013 06:36
+ * Auto generated 18-10-2013 06:37
  *
  * Manual updates:
  * Only the data in the array - everything else is removed by next
@@ -15,7 +15,7 @@ $EM_CONF[$_EXTKEY] = array (
 	'description' => 'Website news with front page teasers and article handling inside.',
 	'category' => 'plugin',
 	'shy' => 0,
-	'version' => '3.4.0',
+	'version' => '3.5.0',
 	'dependencies' => '',
 	'conflicts' => '',
 	'priority' => '',
@@ -25,7 +25,7 @@ $EM_CONF[$_EXTKEY] = array (
 	'uploadfolder' => 1,
 	'createDirs' => '',
 	'modify_tables' => 'be_groups,be_users',
-	'clearcacheonload' => 1,
+	'clearcacheonload' => 0,
 	'lockType' => '',
 	'author' => 'Rupert Germann [wmdb]',
 	'author_email' => 'rupi@gmx.li',
@@ -37,8 +37,8 @@ $EM_CONF[$_EXTKEY] = array (
 		'depends' => 
 		array (
 			'cms' => '',
-			'php' => '5.0.0-5.3.99',
-			'typo3' => '4.3.0-6.0.99',
+			'php' => '5.2.0-5.4.99',
+			'typo3' => '4.5.0-6.1.99',
 		),
 		'conflicts' => 
 		array (

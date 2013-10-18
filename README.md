@@ -1,16 +1,16 @@
 # TYPO3 Extension "tt_news"
 Website news with front page teasers and article handling inside.
 
-## Version 3.4.0
+## Version 3.5.0
 
 
 
 
 <table>
-	<tr><td>Version</td><td>3.4.0 beta</td></tr>
-	<tr><td>Release date</td><td>27. November 2012</td></tr>
+	<tr><td>Version</td><td>3.5.0 beta</td></tr>
+	<tr><td>Release date</td><td>02. September 2013</td></tr>
 	<tr><td>Author</td><td>Rupert Germann [wmdb]</td></tr>
-	<tr><td>Comment</td><td>TYPO3 6.0 Compatibility fixes (Thanks to Lord Hader)</td></tr>
+	<tr><td>Comment</td><td>Compatibility issues for TYPO3 CMS 6.2 - no new features</td></tr>
 </table>
 
 ## !! Attention !!
