@@ -1,16 +1,16 @@
 # TYPO3 Extension "tt_news"
 Website news with front page teasers and article handling inside.
 
-## Version 2.3.5
+## Version 2.3.6
 
 
 
 
 <table>
-	<tr><td>Version</td><td>2.3.5 beta</td></tr>
-	<tr><td>Release date</td><td>21. April 2006</td></tr>
+	<tr><td>Version</td><td>2.3.6 beta</td></tr>
+	<tr><td>Release date</td><td>24. April 2006</td></tr>
 	<tr><td>Author</td><td>Rupert Germann</td></tr>
-	<tr><td>Comment</td><td>Added the fix which caused new created records not to appear in TYPO3 versions lower than 4.0 to tt_news categories, too.  Added some labels to the locallang file.  Added slovak translation</td></tr>
+	<tr><td>Comment</td><td>fixed a bug (3322) that caused a MySQL error concerning the sorting of categories and which appeared when "displaySubCategories" was enabled.</td></tr>
 </table>
 
 ## !! Attention !!
