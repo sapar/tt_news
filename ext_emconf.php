@@ -20,7 +20,7 @@ $EM_CONF[$_EXTKEY] = array (
 	'priority' => '',
 	'loadOrder' => '',
 	'module' => '',
-	'state' => 'stable',
+	'state' => 'beta',
 	'uploadfolder' => '1',
 	'createDirs' => '',
 	'modify_tables' => '',
@@ -31,13 +31,13 @@ $EM_CONF[$_EXTKEY] = array (
 	'author_company' => '',
 	'CGLcompliance' => NULL,
 	'CGLcompliance_note' => NULL,
-	'version' => '2.0.6',
+	'version' => '2.1.2',
 	'constraints' => 
 	array (
 		'depends' => 
 		array (
-			'typo3' => '3.6.4-0.0.4',
-			'php' => '0.0.7-0.0.7',
+			'typo3' => '3.6.1-3.8.1',
+			'php' => '4.2.3-4.3.11',
 			'cms' => '',
 		),
 		'conflicts' => 
