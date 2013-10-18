@@ -21,7 +21,7 @@ $EM_CONF[$_EXTKEY] = array (
 	'loadOrder' => '',
 	'module' => '',
 	'state' => 'stable',
-	'uploadfolder' => '0',
+	'uploadfolder' => '1',
 	'createDirs' => '',
 	'modify_tables' => '',
 	'clearCacheOnLoad' => '1',
@@ -31,13 +31,13 @@ $EM_CONF[$_EXTKEY] = array (
 	'author_company' => '',
 	'CGLcompliance' => NULL,
 	'CGLcompliance_note' => NULL,
-	'version' => '1.2.3',
+	'version' => '1.3.0',
 	'constraints' => 
 	array (
 		'depends' => 
 		array (
-			'typo3' => '',
-			'php' => '0.0.4-0.0.4',
+			'typo3' => '3.6.2-0.0.2',
+			'php' => '0.0.5-0.0.5',
 			'cms' => '',
 		),
 		'conflicts' => 
