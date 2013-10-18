@@ -1,14 +1,14 @@
 # TYPO3 Extension "tt_news"
 Website news with front page teasers and article handling inside.
 
-## Version 2.2.7
+## Version 2.2.21
 
 
 
 
 <table>
-	<tr><td>Version</td><td>2.2.7 beta</td></tr>
-	<tr><td>Release date</td><td>21. May 2005</td></tr>
+	<tr><td>Version</td><td>2.2.21 beta</td></tr>
+	<tr><td>Release date</td><td>11. June 2005</td></tr>
 	<tr><td>Author</td><td>Rupert Germann</td></tr>
 </table>
 

@@ -31,7 +31,7 @@ $EM_CONF[$_EXTKEY] = array (
 	'author_company' => '',
 	'CGLcompliance' => NULL,
 	'CGLcompliance_note' => NULL,
-	'version' => '2.2.7',
+	'version' => '2.2.21',
 	'constraints' => 
 	array (
 		'depends' => 
