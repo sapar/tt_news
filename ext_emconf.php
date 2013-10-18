@@ -15,7 +15,7 @@ $EM_CONF[$_EXTKEY] = array (
 	'description' => 'Website news with front page teasers and article handling inside.',
 	'category' => 'plugin',
 	'shy' => 0,
-	'version' => '3.1.0',
+	'version' => '3.2.0',
 	'dependencies' => '',
 	'conflicts' => '',
 	'priority' => '',
@@ -27,7 +27,7 @@ $EM_CONF[$_EXTKEY] = array (
 	'modify_tables' => 'be_groups,be_users',
 	'clearcacheonload' => 1,
 	'lockType' => '',
-	'author' => 'Rupert Germann',
+	'author' => 'Rupert Germann [wmdb]',
 	'author_email' => 'rupi@gmx.li',
 	'author_company' => 'www.wmdb.de',
 	'CGLcompliance' => NULL,
@@ -38,7 +38,7 @@ $EM_CONF[$_EXTKEY] = array (
 		array (
 			'cms' => '',
 			'php' => '5.0.0-5.3.99',
-			'typo3' => '4.1.0-4.6.99',
+			'typo3' => '4.3.0-4.7.99',
 		),
 		'conflicts' => 
 		array (
