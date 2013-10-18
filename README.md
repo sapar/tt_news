@@ -1,16 +1,16 @@
 # TYPO3 Extension "tt_news"
 Website news with front page teasers and article handling inside.
 
-## Version 3.0.0
+## Version 3.0.1
 
 
 
 
 <table>
-	<tr><td>Version</td><td>3.0.0 beta</td></tr>
-	<tr><td>Release date</td><td>27. November 2009</td></tr>
+	<tr><td>Version</td><td>3.0.1 beta</td></tr>
+	<tr><td>Release date</td><td>02. December 2009</td></tr>
 	<tr><td>Author</td><td>Rupert Germann</td></tr>
-	<tr><td>Comment</td><td>New major version with lots of new features and bugfixes. IMPORTANT!! Read document "tt_news/doc/tt_news_3.0_changes.sxw" before upgrading.</td></tr>
+	<tr><td>Comment</td><td>Fixed bug 12808 (duplicated ? in class.tx_ttnews_cache.php) and bug 12848 (caching framework problem) !!! Database changes !!!</td></tr>
 </table>
 
 ## !! Attention !!
