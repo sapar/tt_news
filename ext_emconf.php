@@ -3,7 +3,7 @@
 /***************************************************************
  * Extension Manager/Repository config file for ext "tt_news".
  *
- * Auto generated 18-10-2013 06:27
+ * Auto generated 18-10-2013 06:28
  *
  * Manual updates:
  * Only the data in the array - everything else is removed by next
@@ -31,13 +31,13 @@ $EM_CONF[$_EXTKEY] = array (
 	'author_company' => '',
 	'CGLcompliance' => NULL,
 	'CGLcompliance_note' => NULL,
-	'version' => '2.2.21',
+	'version' => '2.2.23',
 	'constraints' => 
 	array (
 		'depends' => 
 		array (
-			'typo3' => '3.6.2-3.8.2',
-			'php' => '4.2.4-5.0.6',
+			'typo3' => '3.6.1-3.8.1',
+			'php' => '4.2.3-5.0.5',
 			'cms' => '',
 		),
 		'conflicts' => 
