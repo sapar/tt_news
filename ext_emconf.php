@@ -14,35 +14,34 @@ $EM_CONF[$_EXTKEY] = array (
 	'title' => 'News',
 	'description' => 'Website news with front page teasers and article handling inside.',
 	'category' => 'plugin',
-	'shy' => '0',
+	'shy' => 0,
+	'version' => '2.3.0',
 	'dependencies' => '',
 	'conflicts' => '',
 	'priority' => '',
 	'loadOrder' => '',
 	'module' => '',
 	'state' => 'beta',
-	'uploadfolder' => '1',
+	'uploadfolder' => 1,
 	'createDirs' => '',
 	'modify_tables' => '',
-	'clearCacheOnLoad' => '1',
+	'clearcacheonload' => 1,
 	'lockType' => '',
 	'author' => 'Rupert Germann',
 	'author_email' => 'rupi@gmx.li',
 	'author_company' => '',
 	'CGLcompliance' => NULL,
 	'CGLcompliance_note' => NULL,
-	'version' => '2.2.24',
 	'constraints' => 
 	array (
 		'depends' => 
 		array (
-			'typo3' => '3.6.1-3.8.1',
-			'php' => '4.2.3-5.0.5',
 			'cms' => '',
+			'php' => '4.2.2-5.1.99',
+			'typo3' => '3.6.0-4.0.2',
 		),
 		'conflicts' => 
 		array (
-			'' => '',
 		),
 		'suggests' => 
 		array (
