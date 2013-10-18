@@ -1,20 +1,16 @@
 # TYPO3 Extension "tt_news"
 Website news with front page teasers and article handling inside.
 
-## Version 1.5.3
+## Version 1.6.3
 
 
 
 
 <table>
-	<tr><td>Version</td><td>1.5.3 stable</td></tr>
-	<tr><td>Release date</td><td>25. August 2004</td></tr>
+	<tr><td>Version</td><td>1.6.3 stable</td></tr>
+	<tr><td>Release date</td><td>19. September 2004</td></tr>
 	<tr><td>Author</td><td>Rupert Germann</td></tr>
-	<tr><td>Comment</td><td>- new feature, excludeLatestFromList
-- merged in new translations
-- new section about Links in news in the manual.
-- fixed a small bug with the firstImageIsPreview mode: now the captions are displayed correctly
-- added some new TSvars and a db-f</td></tr>
+	<tr><td>Comment</td><td>small change in the getRelatedCobj - requires changes in your TS-setup (see deafult setup for example). Fix for the "12hour" bug. New Section about "RTE" configuration in the manual.</td></tr>
 </table>
 
 ## !! Attention !!
