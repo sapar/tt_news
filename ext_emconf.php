@@ -15,7 +15,7 @@ $EM_CONF[$_EXTKEY] = array (
 	'description' => 'Website news with front page teasers and article handling inside.',
 	'category' => 'plugin',
 	'shy' => 0,
-	'version' => '2.4.0',
+	'version' => '2.5.0',
 	'dependencies' => '',
 	'conflicts' => '',
 	'priority' => '',
@@ -24,12 +24,12 @@ $EM_CONF[$_EXTKEY] = array (
 	'state' => 'beta',
 	'uploadfolder' => 1,
 	'createDirs' => '',
-	'modify_tables' => '',
+	'modify_tables' => 'be_groups,be_users',
 	'clearcacheonload' => 1,
 	'lockType' => '',
 	'author' => 'Rupert Germann',
 	'author_email' => 'rupi@gmx.li',
-	'author_company' => '',
+	'author_company' => 'www.rgData.de',
 	'CGLcompliance' => NULL,
 	'CGLcompliance_note' => NULL,
 	'constraints' => 
@@ -37,8 +37,8 @@ $EM_CONF[$_EXTKEY] = array (
 		'depends' => 
 		array (
 			'cms' => '',
-			'php' => '4.2.2-5.1.99',
-			'typo3' => '3.6.0-4.0.2',
+			'php' => '4.2.2-5.2.99',
+			'typo3' => '3.8.0-4.1.99',
 		),
 		'conflicts' => 
 		array (
