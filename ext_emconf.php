@@ -15,7 +15,7 @@ $EM_CONF[$_EXTKEY] = array (
 	'description' => 'Website news with front page teasers and article handling inside.',
 	'category' => 'plugin',
 	'shy' => 0,
-	'version' => '3.2.1',
+	'version' => '3.4.0',
 	'dependencies' => '',
 	'conflicts' => '',
 	'priority' => '',
@@ -38,7 +38,7 @@ $EM_CONF[$_EXTKEY] = array (
 		array (
 			'cms' => '',
 			'php' => '5.0.0-5.3.99',
-			'typo3' => '4.3.0-4.7.99',
+			'typo3' => '4.3.0-6.0.99',
 		),
 		'conflicts' => 
 		array (

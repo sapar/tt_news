@@ -1,16 +1,16 @@
 # TYPO3 Extension "tt_news"
 Website news with front page teasers and article handling inside.
 
-## Version 3.2.1
+## Version 3.4.0
 
 
 
 
 <table>
-	<tr><td>Version</td><td>3.2.1 beta</td></tr>
-	<tr><td>Release date</td><td>18. April 2012</td></tr>
+	<tr><td>Version</td><td>3.4.0 beta</td></tr>
+	<tr><td>Release date</td><td>27. November 2012</td></tr>
 	<tr><td>Author</td><td>Rupert Germann [wmdb]</td></tr>
-	<tr><td>Comment</td><td>fixed bug 18507: using "cacheTable" is deprecated and broken in core master</td></tr>
+	<tr><td>Comment</td><td>TYPO3 6.0 Compatibility fixes (Thanks to Lord Hader)</td></tr>
 </table>
 
 ## !! Attention !!
