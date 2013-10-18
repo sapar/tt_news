@@ -26,18 +26,18 @@ $EM_CONF[$_EXTKEY] = array (
 	'modify_tables' => '',
 	'clearCacheOnLoad' => '1',
 	'lockType' => '',
-	'author' => 'Kasper Skårhøj',
-	'author_email' => 'kasper@typo3.com',
-	'author_company' => 'Curby Soft Multimedia',
+	'author' => 'Stig Nørgaard Jepsen',
+	'author_email' => 'stig@8620.dk',
+	'author_company' => '',
 	'CGLcompliance' => NULL,
 	'CGLcompliance_note' => NULL,
-	'version' => '1.0.5',
+	'version' => '1.2.3',
 	'constraints' => 
 	array (
 		'depends' => 
 		array (
 			'typo3' => '',
-			'php' => '',
+			'php' => '0.0.4-0.0.4',
 			'cms' => '',
 		),
 		'conflicts' => 

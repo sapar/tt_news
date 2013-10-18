@@ -1,17 +1,17 @@
 # TYPO3 Extension "tt_news"
 Website news with front page teasers and article handling inside.
 
-## Version 1.0.5
+## Version 1.2.3
 
 
 
 
 <table>
-	<tr><td>Version</td><td>1.0.5 stable</td></tr>
-	<tr><td>Release date</td><td>10. May 2004</td></tr>
-	<tr><td>Author</td><td>Kasper Skrhj</td></tr>
-	<tr><td>Comment</td><td>Bugfix:
-Only one month showed in news archive fixed.</td></tr>
+	<tr><td>Version</td><td>1.2.3 stable</td></tr>
+	<tr><td>Release date</td><td>10. June 2004</td></tr>
+	<tr><td>Author</td><td>Stig Nrgaard Jepsen</td></tr>
+	<tr><td>Comment</td><td>Major update. Flexforms added. Updater added for category table and CODE-filed(select_key) to FlexForms. Bugfix: When using the LIST method, would only display first page if number of newsitems exceeded limit.
+Bugfix in 1.2.3: 2labeltexts were missing in</td></tr>
 </table>
 
 ## !! Attention !!
