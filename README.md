@@ -1,16 +1,16 @@
 # TYPO3 Extension "tt_news"
 Website news with front page teasers and article handling inside.
 
-## Version 2.3.6
+## Version 2.4.0
 
 
 
 
 <table>
-	<tr><td>Version</td><td>2.3.6 beta</td></tr>
-	<tr><td>Release date</td><td>24. April 2006</td></tr>
+	<tr><td>Version</td><td>2.4.0 beta</td></tr>
+	<tr><td>Release date</td><td>19. May 2006</td></tr>
 	<tr><td>Author</td><td>Rupert Germann</td></tr>
-	<tr><td>Comment</td><td>fixed a bug (3322) that caused a MySQL error concerning the sorting of categories and which appeared when "displaySubCategories" was enabled.</td></tr>
+	<tr><td>Comment</td><td>Some bugfixes and some new features - see Changelog.</td></tr>
 </table>
 
 ## !! Attention !!
