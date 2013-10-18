@@ -1,16 +1,16 @@
 # TYPO3 Extension "tt_news"
 Website news with front page teasers and article handling inside.
 
-## Version 2.3.1
+## Version 2.3.2
 
 
 
 
 <table>
-	<tr><td>Version</td><td>2.3.1 beta</td></tr>
-	<tr><td>Release date</td><td>17. April 2006</td></tr>
+	<tr><td>Version</td><td>2.3.2 beta</td></tr>
+	<tr><td>Release date</td><td>18. April 2006</td></tr>
 	<tr><td>Author</td><td>Rupert Germann</td></tr>
-	<tr><td>Comment</td><td>fixed error with missing locallang.php file in the new content element wizard</td></tr>
+	<tr><td>Comment</td><td>fixed a problem with hidden records in workspaces.</td></tr>
 </table>
 
 ## !! Attention !!
