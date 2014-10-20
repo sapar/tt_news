@@ -1,16 +1,17 @@
 # TYPO3 Extension "tt_news"
 Website news with front page teasers and article handling inside.
 
-## Version 3.5.1
-** BE AWARE: This extension has been marked as insecure by the security team! **.
+## Version 3.5.2
+
 
 
 
 <table>
-	<tr><td>Version</td><td>3.5.1 beta</td></tr>
-	<tr><td>Release date</td><td>27. October 2013</td></tr>
+	<tr><td>Version</td><td>3.5.2 beta</td></tr>
+	<tr><td>Release date</td><td>12. February 2014</td></tr>
 	<tr><td>Author</td><td>Rupert Germann [wmdb]</td></tr>
-	<tr><td>Comment</td><td>Bugfix for a fatal PHP error under PHP 5.2</td></tr>
+	<tr><td>Comment</td><td>Security Fix, PLEASE UPDATE.
+For details read advisory: typo3-ext-sa-2014-003</td></tr>
 </table>
 
 ## !! Attention !!
