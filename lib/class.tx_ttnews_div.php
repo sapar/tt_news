@@ -36,43 +36,14 @@
  */
 class tx_ttnews_div {
 
-//	var $allowedItemsFromTreeSelector = false;
-
-
-//	function useAllowedCategories() {
-//		global $BE_USER;
-//		if (!$BE_USER->isAdmin()) {
-//			if ($BE_USER->user['tt_news_categorymounts']) {
-//				$this->allowedItemsFromTreeSelector = TRUE;
-//				return TRUE;
-//			} else { // no categorymounts set in be_user record - check groups
-//				if (is_array($BE_USER->userGroups)) {
-//					$cmounts = array();
-//					foreach ($BE_USER->userGroups as $group) {
-//						if ($group['tt_news_categorymounts']) {
-//							$cmounts[] = $group['tt_news_categorymounts'];
-//						}
-//					}
-//					$cMountList = implode(',',$cmounts);
-//					if ($cMountList) {
-//						$this->allowedItemsFromTreeSelector = TRUE;
-//						return TRUE;
-//					}
-//				}
-//			}
-//			if ($BE_USER->getTSConfigVal('options.useListOfAllowedItems')) {
-//				return TRUE;
-//			}
-//		}
-//	}
 
 	/**
-	 * [Describe function...]
+	 * Get category mounts of the current user
 	 *
-	 * @param	[type]		$withSub: ...
-	 * @return	[type]		...
+	 * @param bool $withSub Also return subcategories
+	 * @return string commeseparated list of mounts
 	 */
-	function getBeUserCatMounts($withSub=true) {
+	public static function getBeUserCatMounts($withSub = TRUE) {
 		global $BE_USER;
 
 		$cmounts = array();
@@ -98,13 +69,14 @@ class tx_ttnews_div {
 
 
 	/**
-	 * extends a given list of categories by their subcategories
+	 * Extends a given list of categories by their subcategories
 	 *
-	 * @param	string		$catlist: list of categories which will be extended by subcategories
-	 * @param	integer		$cc: counter to detect recursion in nested categories
-	 * @return	string		extended $catlist
+	 * @param string $catlist list of categories which will be extended by subcategories
+	 * @param string $addWhere additional WHERE restricion
+	 * @param int $cc counter to detect recursion in nested categories
+	 * @return string extended $catlist
 	 */
-	function getSubCategories($catlist,$addWhere='', $cc = 0) {
+	public static function getSubCategories($catlist, $addWhere = '', $cc = 0) {
 
 		if (!$catlist) {
 			t3lib_div::devLog('EMPTY $catlist ('.__CLASS__.'::'.__FUNCTION__.')', 'tt_news', 3, array());
@@ -117,14 +89,14 @@ class tx_ttnews_div {
 			'tt_news_cat',
 			'tt_news_cat.parent_category IN ('.$catlist.') AND deleted=0 '.$addWhere);
 
-		while (($row = $GLOBALS['TYPO3_DB']->sql_fetch_assoc($res))) {
+		while ($row = $GLOBALS['TYPO3_DB']->sql_fetch_assoc($res)) {
 			$cc++;
 			if ($cc > 10000) {
 				$GLOBALS['TT']->setTSlogMessage('tt_news: one or more recursive categories where found');
 				return implode(',', $sCatArr);
 			}
 			$subcats = tx_ttnews_div::getSubCategories($row['uid'],$addWhere, $cc);
-			$subcats = $subcats?','.$subcats:'';
+			$subcats = $subcats ? ',' . $subcats : '';
 			$sCatArr[] = $row['uid'].$subcats;
 		}
 		$GLOBALS['TYPO3_DB']->sql_free_result($res);
@@ -132,9 +104,7 @@ class tx_ttnews_div {
 		return $catlist;
 	}
 
-
-
-	function getNewsCountForSubcategory(&$result, $cat, $news_clause, $catclause) {
+	public static function getNewsCountForSubcategory(&$result, $cat, $news_clause, $catclause) {
 		// count news in current category
 
 		$select_fields = 'COUNT(DISTINCT tt_news.uid)';
@@ -176,7 +146,7 @@ class tx_ttnews_div {
 
 		$res = $GLOBALS['TYPO3_DB']->exec_SELECTquery($select_fields, $from_table, $where_clause);
 
-		while (($row = $GLOBALS['TYPO3_DB']->sql_fetch_assoc($res))) {
+		while ($row = $GLOBALS['TYPO3_DB']->sql_fetch_assoc($res)) {
 			tx_ttnews_div::getNewsCountForSubcategory($result, $row['uid'], $news_clause,$catclause);
 
 //			debug($result, '$result cat: '.$row['uid'].' ('.__CLASS__.'::'.__FUNCTION__.')', __LINE__, __FILE__, 3);
@@ -191,26 +161,26 @@ class tx_ttnews_div {
 	 * returns a list of all allowed categories for the current user.
 	 * Subcategories are included, categories from "tt_newsPerms.tt_news_cat.excludeList" are excluded
 	 *
-	 * @return	[type]		...
+	 * @return array tree IDs
 	 */
 	function getAllowedTreeIDs() {
 
 		$catlistWhere = tx_ttnews_div::getCatlistWhere();
 		$treeIDs = array();
-		$res = $GLOBALS['TYPO3_DB']->exec_SELECTquery('uid', 'tt_news_cat', '1=1' .$catlistWhere. ' AND deleted=0');
+		$res = $GLOBALS['TYPO3_DB']->exec_SELECTquery('uid', 'tt_news_cat', '1=1' . $catlistWhere . ' AND deleted=0');
 		while (($row = $GLOBALS['TYPO3_DB']->sql_fetch_assoc($res))) {
-			$treeIDs[]=$row['uid'];
+			$treeIDs[] = $row['uid'];
 		}
 		$GLOBALS['TYPO3_DB']->sql_free_result($res);
 		return $treeIDs;
 	}
 
 	/**
-	 * [Describe function...]
+	 * Get WHERE restrictions for the category list query of the current user
 	 *
-	 * @return	[type]		...
+	 * @return string WHERE query part
 	 */
-	function getCatlistWhere() {
+	public static function getCatlistWhere() {
 		$catlistWhere = '';
 		if (!$GLOBALS['BE_USER']->isAdmin()) {
 			// get include/exclude items
@@ -220,21 +190,20 @@ class tx_ttnews_div {
 			if ($excludeList) {
 				$catlistWhere .= ' AND tt_news_cat.uid NOT IN ('.implode(t3lib_div::intExplode(',',$excludeList),',').')';
 			}
-			if (count($includeCatArray)) {
+			if (!empty($includeCatArray)) {
 				$catlistWhere .= ' AND tt_news_cat.uid IN ('.implode(',',$includeCatArray).')';
 			}
 		}
-
 
 		return $catlistWhere;
 	}
 
 	/**
-	 * [Describe function...]
+	 * Get categories to include for the current user
 	 *
-	 * @return	[type]		...
+	 * @return array ids of categories to include
 	 */
-	function getIncludeCatArray() {
+	public static function getIncludeCatArray() {
 		$includeList = $GLOBALS['BE_USER']->getTSConfigVal('tt_newsPerms.tt_news_cat.includeList');
 		$catmounts = tx_ttnews_div::getBeUserCatMounts();
 		if ($catmounts) {
@@ -243,9 +212,6 @@ class tx_ttnews_div {
 
 		return t3lib_div::intExplode(',',$includeList, 1);
 	}
-
-
-
 
 }
 
